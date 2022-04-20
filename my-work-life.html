@@ -4,16 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - Javier Monleon</title>
+  <title>My work life - Javier Monleón</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
   <link href="css/style.css" type="text/css" rel="stylesheet" />
-  <link rel="shortcut icon" href="img/favicon.svg">
+  <link rel="shortcut icon" href="img/logo2.png">
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-secondary bg-secondary p-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary p-0">
       <div class="container-fluid d-md-none">
         <a class="navbar-brand" href="index.html"><img class="logo" src="img/FIRMA VECTOR.png" /></a>
         <button class="navbar-toggler m-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -23,10 +23,10 @@
         <div class="collapse navbar-collapse text-center pb-2" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="my-work-life.html">My work life</a>
+              <a class="nav-link active" aria-current="page" href="#">My work life</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact me</a>
@@ -41,7 +41,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">
+          <a class="nav-link" href="index.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house"
               viewBox="0 0 16 16">
               <title>Home</title>
@@ -53,7 +53,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="my-work-life.html">
+          <a class="nav-link active" aria-current="page" href="#">
             My work life
           </a>
         </li>
@@ -65,31 +65,365 @@
   </header>
   <!-- MAIN -->
   <main>
-    <div class="container index">
-      <div id="titulo" class="col mt-5 pt-3">
-        <h1 class="display-3">Hi, I'm Javi</h1>
-        <p class="lead pb-3">
-          Would you like to know me better?
-        </p>
-        <p class="TLDR"><small> I'm just a curious, creative and challenge-passionate guy who likes sharing opinions with others, following a healthy philosophy and enjoying nature with my dogs.</small></p>
-        <hr class="mt-5">
-      </div>
-      <a class="text-reset text-decoration-none" href="my-work-life.html">
-        <div class="col mt-5 text-end">
-          <h2 class="bigLink display-5">Me, professionally ></h1>
-            <p class="lead">
-              My education and work experience
-            </p>
-            <hr class="mt-5">
-        </div>
-      </a>
-      <div class="col py-2 mb-5">
-        <p class="text-muted"><small>
-            You're welcome to borrow my site's source code at <a href="https://github.com/jmonloop/MySite"
-              target="_blank">this GitHub repository</a> and use it as you please.
-          </small></p>
-      </div>
+    <div id="titulo" class="index container mt-5">
+      <h1 class="display-3">My work life</h1>
+      <p class="lead">
+        Go through my professional and academic life in reverse chronological order.
+      </p>
+      <hr class="mt-5">
+      <p class="text-muted"><small>
+          If you're looking for a more traditionally formatted résumé, visit <a
+            href="https://www.linkedin.com/in/jmonleonlopez/" target="_blank">my LinkedIn page</a> or <a
+            href="mailto:monleonlopezjavier@gmail.com?subject=CV%20enquiry&body=Hi%20Javier,%0D%0AI%27d%20like%20you%20to%20please%20send%20me%20your%20CV."
+            target="_blank">ask me for my CV</a>.
+        </small></p>
     </div>
+    <!----------------- MY WORK LIFE ----------------->
+    <div id="myWorkLifeContainer" class="container-fluid">
+      <div id="myWorkLife" class="container my-5 timelineWidget">
+
+        <div class="row p-3 pe-4 mb-5">
+          <div class="card p-0 cardTLDR">
+            <div class="card-body py-2">
+              <p class="TLDR"><small><b><abbr title="Too Long, Didn't Read">TL;DR:</abbr></b> Full Stack Developer. I have worked with many different technologies. I'm used to adapting to new ones. Faithful defender that with effort, attitude and a good method you can achieve almost anything.</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div id="timeLine" class="col-auto align-self-stretch d-flex flex-column px-0">
+            <div class="timeStart timeLine"></div>
+            <div class="timeMid timeLine"></div>
+            <div class="timeEnd timeLine"></div>
+          </div>
+
+          <div id="events" class="col ps-0">
+
+            <div class="card event mt-3">
+              <div class="card-body">
+                <div class="row cardTitleContainer">
+                  <div class="col-auto p-0">
+                    <div id="imgGeeks" class="eventIcon"></div>
+                  </div>
+                  <div class="col p-0">
+                    <h5 class="card-title">Full Stack Developer Bootcamp</h5>
+                    <h6 class="card-subtitle text-muted">At GeeksHubs Academy</h6>
+                  </div>
+                </div>
+                <p class="card-text mt-3 mb-2">I took this 4 month long software development intensive training.</p>
+                <p class="card-text mb-0 text-center text-muted" data-bs-toggle="collapse"
+                  data-bs-target="#collapseGEEKS" href="" role="button" aria-expanded="false"
+                  aria-controls="collapseGEEKS"><small><u>Click here</u> to read more about my activities at
+                    GeeksHubs</small></p>
+                <div class="collapse mt-3" id="collapseGEEKS">
+                  <ul>
+                    <li>
+                      I formalized my self-taught programming skills and learned about agile methodologies, testing, QA
+                      and the latest and most important tools used in front and back-end development.
+                    </li>
+                    <li>
+                      I worked on several personal projects: check them out on <a
+                        href="https://github.com/jmonloop">my GitHub page</a>.
+                    </li>
+                  </ul>
+                  <div class="row align-items-center mb-2">
+                    <div class="col-sm-auto text-center my-2 ps-sm-4"><img id="imgGEEKS" src="img/GEEKS.svg"
+                        alt="GeeksHubs Logo"></div>
+                    <div class="col-sm fw-light"><small>Part of the Alfatec Group, GeeksHubs is reinventing the future
+                        of tech education and recruitment. They train IT professionals in the latest technologies that
+                        companies need in an applied way and move fast to adapt to the reality of the market.</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- NEW PROGRAMS -->
+            <div class="eventSpacer h2 container">
+              <div id="eventDate3" class="eventDateContainer row">
+                <div class="lineLeft col-1">
+                </div>
+                <div class="eventDate h2 col">2021</div>
+              </div>
+            </div>
+            <div id="event3" class="card event">
+              <div class="card-body">
+                <div class="row cardTitleContainer">
+                  <div class="col-auto p-0">
+                    <div id="imgFord" class="eventIcon"></div>
+                  </div>
+                  <div class="col p-0">
+                    <h5 class="card-title">Programmer in New Programs</h5>
+                    <h6 class="card-subtitle text-muted">At Crankshaft New Programs Department</h6>
+                  </div>
+                </div>
+                <p class="card-text mt-3 mb-2">As one of the main programmers of the team responsible for the line retooling for the new projects of the plant.</p>
+                <p class="card-text mb-0 text-center text-muted" data-bs-toggle="collapse" data-bs-target="#collapseVOL"
+                  href="" role="button" aria-expanded="false" aria-controls="collapseVOL"><small><u>Click here</u> to know about my functions and skills during this stage</small></p>
+                <div class="collapse mt-3" id="collapseVOL">
+                  <ul>
+                    <li>
+                      <b>Design and development of large projects</b> for the line retooling. Adding machine features from scratch or reusing existing components.
+                    </li>
+                    <li>
+                      <b>Management of projects necessities</b>, including hardware, software architecture and planning. Watching for the budget and the schedule and adapting to unforeseen problems.
+                    </li>
+                    <li>
+                      <b>Working into a very organized team</b> by SCRUM-similar methodologies through weekly meetings, Kanban boards and daily stand-ups.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- THEPOWERMBA -->
+            <div class="eventSpacer h2 container">
+              <div id="eventDate2" class="eventDateContainer row">
+                <div class="lineLeft col-1">
+                </div>
+                <div class="eventDate h2 col">2019</div>
+              </div>
+            </div>
+            <div id="event2" class="card event">
+              <div class="card-body">
+                <div class="row cardTitleContainer">
+                  <div class="col-auto p-0">
+                    <div id="imgTPMBA" class="eventIcon"></div>
+                  </div>
+                  <div class="col p-0">
+                    <h5 class="card-title">Online Master Business Administration</h5>
+                    <h6 class="card-subtitle text-muted">At The Power MBA</h6>
+                  </div>
+                </div>
+                <p class="card-text mt-3 mb-2">I studied by myself an 8 months online MBA to acquire business skills.</p>
+                <p class="card-text mb-0 text-center text-muted" data-bs-toggle="collapse"
+                  data-bs-target="#collapseIUPI" href="" role="button" aria-expanded="false"
+                  aria-controls="collapseIUPI"><small><u>Click here</u> to read more about the skills</small>
+                </p>
+                <div class="collapse mt-3" id="collapseIUPI">
+                  <ul>
+                    <li>
+                      <b>Lean Startup</b> methodologies to test ideas before spending so much time on developing them.
+                    </li>
+                    <li>
+                      Agile methodologies to being adaptive and flexible, <b>being able to swing as the needs of the project change</b>.
+                    </li>
+                    <li>
+                      <b>Focusing on the MVP first</b> and not to spend too much time on the full product. Seeking to allways give value to the customer.
+                    </li>
+                  </ul>
+                  <div class="row align-items-center mb-2">
+                    <div class="col-sm-auto text-center my-2 ps-sm-4"><img id="imgTPMBA_black" src="img/tpmbablack.png"
+                        alt="iupibox Logo"></div>
+                    <div class="col-sm fw-light"><small>As <a href="https://www.forbes.com/sites/thepowermba/2020/06/17/beyond-the-mba-how-online-learning-is-forging-a-new-reality-for-business-education/?sh=60009f981d0a">this Forbes article</a>  says, The Power MBA is one of the bests alternatives to traditional MBAs for those who need to acquire business knowleges in order to start their own business or working in qualified management positions. </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- LINE UPGRADER -->
+            <div class="eventSpacer h2 container">
+              <div id="eventDate4" class="eventDateContainer row">
+                <div class="lineLeft col-1">
+                </div>
+                <div class="eventDate h2 col">2018</div>
+              </div>
+            </div>
+            <div id="event4" class="card event">
+              <div class="card-body">
+                <div class="row cardTitleContainer">
+                  <div class="col-auto p-0">
+                    <div id="imgFord" class="eventIcon"></div>
+                  </div>
+                  <div class="col p-0">
+                    <h5 class="card-title">Programmer Specialist</h5>
+                    <h6 class="card-subtitle text-muted">At VEP Crankshaft Department</h6>
+                  </div>
+                </div>
+                <p class="card-text mt-3 mb-2">I was responsible for a large part of the Crankshaft's department
+                  programming upgrades.
+                </p>
+                <p class="card-text mb-0 text-center text-muted" data-bs-toggle="collapse"
+                  data-bs-target="#collapseVFDE" href="" role="button" aria-expanded="false"
+                  aria-controls="collapseVFDE"><small><u>Click here</u> to read more about my upgrading work</small></p>
+                <div class="collapse mt-3" id="collapseVFDE">
+                  <ul>
+                    <li>
+                      Responsible for <b>looking for improvements of operations</b> and design the programming needs of
+                      them.
+                    </li>
+                    <li>
+                      <b>Upgrading projects full programmer.</b> Interconnecting different controls from PLC's like
+                      Siemens, Rockwell, Allen-Bradley, etc; to servo-drives like Bosch-Rexroth, Festo, etc.
+                    </li>
+                    <li>
+                      <b>Team Leader role</b> for a team of 30 people during two months. I decided to leave the position
+                      to continue focusing on programming tasks, which is what I really like.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- FIS MIGRATION -->
+            <div class="eventSpacer h2 container">
+              <div id="eventDate5" class="eventDateContainer row">
+                <div class="lineLeft col-1">
+                </div>
+                <div class="eventDate h2 col">2017</div>
+              </div>
+            </div>
+            <div id="event5" class="card event">
+              <div class="card-body">
+                <div class="row cardTitleContainer">
+                  <div class="col-auto p-0">
+                    <div id="imgFord" class="eventIcon"></div>
+                  </div>
+                  <div class="col p-0">
+                    <h5 class="card-title">VEP Crankshaft FIS Migration Responsible</h5>
+                    <h6 class="card-subtitle text-muted">At VEP Crankshaft Department</h6>
+                  </div>
+                </div>
+                <p class="card-text mt-3 mb-2">I migrated the machine data monitoring collector system of the Crankshaft
+                  line
+                  from POSMON to FIS.</p>
+                <p class="card-text mb-0 text-center text-muted" data-bs-toggle="collapse"
+                  data-bs-target="#collapseVEGP" href="" role="button" aria-expanded="false"
+                  aria-controls="collapseVEGP"><small><u>Click here</u> to read more about my work on the FIS
+                    migration</small>
+                </p>
+                <div class="collapse mt-3" id="collapseVEGP">
+                  <ul>
+                    <li>
+                      <b>Working with ALL the technologies</b> and controls of the Crankshaft line: PLCs, NCs, HDMIs,
+                      PCs, etc.
+                    </li>
+                    <li>
+                      <b>Developing a method to reduce my learning curve</b> with news technologies in order to quickly
+                      being able to modifying the different controls.
+                    </li>
+                    <li>
+                      <b>Worked with computer systems</b> hand in hand with engineers in order to fix bugs and solve
+                      related breakdowns.
+                    </li>
+                  </ul>
+                  <div class="row align-items-center mb-2">
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+            <!-- MAINTEINANCE AND PLC SPECIALIZATION -->
+            <div class="eventSpacer h2 container">
+              <div id="eventDate6" class="eventDateContainer row">
+                <div class="lineLeft col-1">
+                </div>
+                <div class="eventDate h2 col">2014</div>
+              </div>
+            </div>
+            <div id="event6" class="card event">
+              <div class="card-body">
+                <div class="row cardTitleContainer">
+                  <div class="col-auto p-0">
+                    <div id="imgFord" class="eventIcon"></div>
+                  </div>
+                  <div class="col p-0">
+                    <h5 class="card-title">PLC programming specialization role</h5>
+                    <h6 class="card-subtitle text-muted">At VEP Crankshaft Line Department</h6>
+                  </div>
+                </div>
+                <p class="card-text mt-3 mb-2"><b>As a person who likes challenges</b>, I develop a taste for
+                  technological issues, so I early was dedicated to programming tasks.</p>
+                <p class="card-text mb-0 text-center text-muted" data-bs-toggle="collapse" data-bs-target="#collapseKTH"
+                  href="" role="button" aria-expanded="false" aria-controls="collapseKTH"><small><u>Click here</u> to
+                    read more about my functions and skills during this stage</small></p>
+                <div class="collapse mt-3" id="collapseKTH">
+                  <p>I went to solve faults related to all kinds of digital controls.</p>
+                  <ul>
+                    <li>
+                      Learned a lot of <b>different industrial technologies</b>
+                    </li>
+                    <li>
+                      Develop an <b>own method to solve problems</b> with technologies that I didn't know yet.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="event6-2" class="card event mt-3">
+              <div class="card-body">
+                <div class="row cardTitleContainer">
+                  <div class="col-auto p-0">
+                    <div id="imgFord" class="eventIcon"></div>
+                  </div>
+                  <div class="col p-0">
+                    <h5 class="card-title">Industrial Mainteinance Technician</h5>
+                    <h6 class="card-subtitle text-muted">At Ford Motor Company (Valencia Engine Plant)</h6>
+                  </div>
+                </div>
+                <p class="card-text mt-3 mb-2">Working as a breakdown repairman on the crankshaft line, I needed to
+                  <b>become adaptive to different and stressful situations while being resolutive</b>.
+                </p>
+                <p class="card-text mb-0 text-center text-muted" data-bs-toggle="collapse" data-bs-target="#collapseUPM"
+                  href="" role="button" aria-expanded="false" aria-controls="collapseUPM"><small><u>Click here</u> to
+                    read more about my functions and skills during this stage</small></p>
+                <div class="collapse mt-3" id="collapseUPM">
+                  <ul>
+                    <li>
+                      Fast performance in each line operation
+                    </li>
+                    <li>
+                      <b>Development in different areas of knowledge</b>: mechanics, pneumatics, electricity and
+                      programming
+                    </li>
+                    <li>
+                      That was the moment i fell in love with plc programming
+                    </li>
+                    <li>
+                      Only responsible for the management of hydraulic accumulators as a high responsibility role.
+                    </li>
+                  </ul>
+                  <div class="row align-items-center mb-2">
+                    <div class="col-sm-auto text-center my-2 ps-sm-4"><img id="imgUPM" src="img/UPM.png" alt="UPM Logo">
+                    </div>
+                    <div class="col-sm fw-light"><small>Considered almost as an "independent factory" inside Ford's
+                        Valencia framework due to its excellence high level, Valencia Engine Plant is the place where
+                        quality and technical innovation go hand in hand.</small></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- GRADUATED IN FORD TRAINING SCHOOL -->
+            <div class="eventSpacer h2 container">
+              <div id="eventDate7" class="eventDateContainer row">
+                <div class="lineLeft col-1">
+                </div>
+                <div class="eventDate h2 col">2010</div>
+              </div>
+            </div>
+            <div id="event7" class="card event">
+              <div class="card-body">
+                <div class="row cardTitleContainer">
+                  <div class="col-auto p-0">
+                    <div id="imgFord" class="eventIcon"></div>
+                  </div>
+                  <div class="col p-0">
+                    <h5 class="card-title">Graduated in Ford Motor Company Training School</h5>
+                    <h6 class="card-subtitle text-muted">Industrial Mechatronic High Grade</h6>
+                    <h7 class="card-subtitle text-muted"><a href="https://cfpford.fdiformacion.com/"
+                        target="_blank">Info about the program</a></h7>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </main>
 
   <!-- FOOTER -->
@@ -110,8 +444,8 @@
               alt="GitHub"></a>
         </div>
         <div class="col-auto">
-          <a href="mailto:monleonlopezjavier@gmail.com" target="_blank"><img class="socialIcon"
-              src="img/envelope-fill.svg" alt="Email"></a>
+          <a href="mailto:monleonlopezjavier@gmail.com" target="_blank"><img class="socialIcon" src="img/envelope-fill.svg"
+              alt="Email"></a>
         </div>
       </div>
       <div class="row justify-content-center pt-2">
@@ -125,6 +459,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/TweenMax.min.js"></script>
+  <script src="js/lib/ScrollMagic.min.js"></script>
+  <script src="js/lib/animation.gsap.min.js"></script>
+  <script src="js/my-work-life.js"></script>
 </body>
 
 </html>
