@@ -10,16 +10,71 @@ a {
 
 /* Clases */
 
-.blur::before {
-    background-color: #f9f6f6;
-    -webkit-filter: blur(4px);
-    filter: blur(5px);
+.intro {
+    backdrop-filter: blur(10px);
+    /* backdrop-filter: brightness(1.5); */
+    padding: 2%;
+    font-weight: 600;
+    font-size: 3em;
+    color: black;
 }
 
-.date2010{
+.intro2 {
+    backdrop-filter: blur(10px);
+    /* backdrop-filter: brightness(0.2); */
+    padding: 2%;
+    font-weight: 600;
+    font-size: 2em;
+    color: white;
+    color: black;
+}
+
+.intro3 {
+    backdrop-filter: blur(10px);
+    /* backdrop-filter: brightness(0.2); */
+    padding: 2%;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: white;
+    color: black;
+}
+
+.intro4 {
+    backdrop-filter: blur(10px);
+    backdrop-filter: brightness(0.1);
+    padding: 2%;
+    font-weight: 600;
+    font-size: 3em;
+    color: white;
+}
+
+.intro5 {
+    backdrop-filter: blur(10px);
+    backdrop-filter: brightness(0.1);
+    padding: 2%;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: white;
+}
+
+.intro6 {
+    /* backdrop-filter: blur(10px); */
+    backdrop-filter: brightness(0.2);
+    padding: 2%;
+    font-weight: 600;
+    font-size: 0.9em;
+    color: white;
+
+    text-align: end;
+}
+
+
+
+.date2010 {
     color: gray;
 }
-.date2014{
+
+.date2014 {
     color: rgb(0, 0, 0);
 }
 
@@ -144,12 +199,11 @@ a {
 }
 
 /* IDs */
-
 #homeContainer {
     background: url(../img/mountain2.jpg);
-    background-size: contain;
+    background-size: auto 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: flex-start;
     border-radius: 0;
 }
 
@@ -221,6 +275,10 @@ a {
 }
 
 #imgGEEKS {
+    width: 7em;
+}
+
+#imgVEP {
     width: 7em;
 }
 
