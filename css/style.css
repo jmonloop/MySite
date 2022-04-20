@@ -1,0 +1,41 @@
+main {
+    overflow: hidden;
+    /* background-color: darkgray; */
+}
+
+a {
+    all:unset;
+    cursor: pointer;
+}
+
+/* Clases */
+
+.logo {
+    width:10vw;
+}
+
+.nav-item {
+    color: white;
+}
+
+.index {
+    max-width:50em;
+}
+
+.bigLink:hover {
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+}
+
+.bigLink {
+    transition: 0.5s;
+}
+
+.contactInfo {
+    max-width:21em;
+}
+
+.fotoPerfil {
+    width:16em;
+    max-width:100%;
+}
