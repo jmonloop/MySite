@@ -39,3 +39,175 @@ a {
     width:16em;
     max-width:100%;
 }
+.event {
+    margin-left: 8%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0.5em;
+}
+
+.cardTLDR {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0.5em;
+}
+
+.eventIcon {
+    width: 3.8em;
+    height: 3.8em;
+    margin: -0.3em 1em 0 0;
+    border-radius: 50%;
+    background-color: rgb(238, 238, 238);
+    background-color: #f9f6f6;
+}
+
+.eventDateTop {
+    margin-top: 5em;
+}
+
+.eventDateBottom {
+    margin-top: .5rem;
+}
+
+.cardTitleContainer {
+    --bs-gutter-x: 0;
+    align-items: center;
+}
+
+.timelineWidget {
+    margin:auto;
+    max-width: 42em;
+    padding-left: 1.3em;
+}
+
+.timeLine {
+    width:0.3em;
+}
+
+.timeStart {
+    height:10em;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
+
+.timeEnd {
+    height:10em;
+    background: linear-gradient( rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.timeMid {
+    flex-grow: 1;
+    background:black;
+}
+
+.lineLeft {
+    padding:0;
+    height: 2.2rem;
+    background: url(../img/timeline.svg);
+    background-size: 3.4rem;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.eventDateContainer {
+    width:100%;
+    margin:0;
+}
+
+.eventSpacer {
+    width: 80%;
+    height:calc(50vh + 1em);
+    margin: 0.5em 0;
+    padding:0;
+}
+
+.TLDR {
+    margin-bottom:0.2em;
+    line-height: 1.2em;
+}
+
+.signature {
+    width:10em;
+}
+
+.socialIcon {
+    width:2em;
+}
+
+/* IDs */
+
+#myWorkLifeContainer {
+    background: linear-gradient(rgba(247,247,247,0) 0%, rgba(247,247,247,1) 5%, rgba(247,247,247,1) 95%, rgba(247,247,247,0) 100%);
+}
+
+#events {
+    padding-top:10em;
+    padding-bottom:10em;
+}
+
+
+#imgFord {
+    background: url(../img/ford.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0;
+}
+
+#imgIndustrial {
+    background: url(../img/industrial.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0;
+}
+
+#imgPlc {
+    background: url(../img/plc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0;
+}
+
+#imgSpec {
+    background: url(../img/specialized.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0;
+}
+
+
+#imgTPMBA {
+    background: url(../img/tpmba.png);
+    background-size: 180%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0;
+}
+
+#imgGeeks {
+    background: url(../img/geeks.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0;
+}
+
+#imgTPMBA_black {
+    width: 7em;
+}
+
+#imgGEEKS {
+    width: 7em;
+}
+
+/* Media Queries */
+
+@media (max-width: 575.98px) {
+    .contactText {
+        font-size:100%
+    }
+    .contactTextContainer {
+        padding:0;
+    }
+    .contactInfo {
+        max-width:18em;
+    }
+}
